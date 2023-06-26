@@ -1,155 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vh;
-    background: linear-gradient(100deg, #4e55d8, #F8B400, #125B50, #FF6363);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #b3dcfa, #5c98c7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
-    color: wheat;
-    box-shadow: -10px -10px 20px (rgba(0, 0, 0, 0.20));
-    margin: 30px 0;
-    text-align: center;
+  color: rgb(177, 40, 99);
+  margin: 20px 0;
 }
-
 #card {
-    position: relative;
-    z-index: 1;
-    width: 400px;
-    height: 300px;
-    background: rgba(255, 255, 247, 0.1);
-    border-radius: 1rem;
-    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.20);
-    display: block;
-    display: none;
-    margin-left: 600px;
-    border: none;
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height: 250px;
+  background: rgba(255, 255, 247, 0.06);
+  border-radius: 1rem;
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  display: none;
+  margin-inline: auto;
+  border: none;
 }
-
 .busca {
-    display: flex;
-    width: 300px;
+  display: flex;
+  width: 300px;
 }
-
 .busca #searchInput {
-    flex: 1;
-    padding: 10px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 30px;
-    margin-left: 50px;
-    display: block;
-    background: rgba(255, 255, 255, 0.10);
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
 }
-
 .busca button {
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    background-color: #FF6363;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
-    margin-top: 30px;
-    color: antiquewhite;
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: rgb(177, 40, 99);
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.busca button:hover {
+  background-color: #444;
 }
 
-
-/*.resultado {
-    width: 300px;
-    display: none;
-    border: 1px dotted #fff;
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
-}*/
+.resultado {
+  width: 300px;
+  display: none;
+  border: 1px dotted #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .titulo {
-    width: 100%;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
 }
 
+.info {
+  display: flex;
+  width: 100%;
+}
 .info .temp {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
-
 .info .vento {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
-
 .tempTitulo,
 .ventoTitulo {
-    color: white;
-    font-size: 16px;
-    margin-bottom: 5px;
+  color: rgb(177, 40, 99);
+  font-size: 17px;
+  margin-bottom: 5px;
 }
-
 .tempInfo,
 .ventoInfo {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
 }
-
 .tempInfo sup {
-    font-size: 15px;
-    font-weight: normal;
+  font-size: 15px;
+  font-weight: normal;
 }
-
 .ventoInfo span {
-    font-size: 15px;
-    font-weight: normal;
+  font-size: 15px;
+  font-weight: normal;
 }
-
-.simbolo {
-    width: 100px;
-    height: 200px;
-}
-
 .ventoArea {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #FFF;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 20px;
-    padding-left: 25px;
-    padding-top: 25px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(177, 40, 99);
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
 }
-
 .ventoPonto {
-    width: 15px;
-    height: 1px;
-    background-color: #FFF;
-    transform-origin: left;
+  width: 15px;
+  height: 1px;
+  background-color: rgb(177, 40, 99);
+  transform-origin: left;
 }
 
 .aviso {
-    color: #FFF;
-    padding-top: 20px;
+  color: #fff;
+  padding-top: 20px;
 }
 
 footer {
-    margin-top: 150px;
-    color: #FFF;
-    font-size: 18px;
-    text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
 }
